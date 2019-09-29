@@ -32,7 +32,9 @@ iseq ${ver} 11.2 && set image_subdir 11/${freebsd_arch} ||
 iseq ${ver} 11.1 && set image_subdir 11/${freebsd_arch} ||
 iseq ${ver} 11.0 && set image_subdir 11/${freebsd_arch} ||
 iseq ${ver} 10.4 && set image_subdir 10/${freebsd_arch} ||
-set src https://mfsbsd.vx.sk/files/images/${image_subdir}/mfsbsd-${image_ver}-${freebsd_arch}.img
+#set src https://mfsbsd.vx.sk/files/images/${image_subdir}/mfsbsd-${image_ver}-${freebsd_arch}.img
+#test hardcoded link
+set src https://download.freebsd.org/ftp/releases/amd64/amd64/ISO-IMAGES/12.0/FreeBSD-12.0-RELEASE-amd64-memstick.img
 imgfree
 echo This loads an mfsbsd installer (http://mfsbsd.vx.sk/).
 echo Root password for all images: mfsroot
